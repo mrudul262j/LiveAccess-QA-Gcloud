@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-06-01T12:59:24.576Z",
+    "end": "2022-06-01T12:59:45.603Z",
+    "duration": 21027,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3cb7fa4c-fa44-4962-94c3-b2dc72bf35a8",
+      "title": "",
+      "fullFile": "cypress/integration/TC_DeleteUser.js",
+      "file": "cypress/integration/TC_DeleteUser.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bbf71219-2e8b-4cfc-bb7c-71510a7e6574",
+          "title": "Delete User",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "AM Login",
+              "fullTitle": "Delete User AM Login",
+              "timedOut": null,
+              "duration": 9127,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.navigate(myGlobalVar);\nloginPage.enterUsername(this.testdata.Username);\nloginPage.enterPassword(this.testdata.Password);\nloginPage.clickOnLogin();",
+              "err": {},
+              "uuid": "0b804aeb-b234-460f-864f-773cb3b4fd15",
+              "parentUUID": "bbf71219-2e8b-4cfc-bb7c-71510a7e6574",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "DeleteUser",
+              "fullTitle": "Delete User DeleteUser",
+              "timedOut": null,
+              "duration": 9917,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "DelUser.fnDeleteCreatedUser();\ncy.wait(4000);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'MJTestAdmin Account' but never did.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'MJTestAdmin Account' but never did.\n    at DeleteUser.fnDeleteCreatedUser (https://qa-gcloud-sso.invue-am.com/__cypress/tests?p=cypress\\integration\\TC_DeleteUser.js:125:12)\n    at Context.eval (https://qa-gcloud-sso.invue-am.com/__cypress/tests?p=cypress\\integration\\TC_DeleteUser.js:234:13)",
+                "diff": null
+              },
+              "uuid": "e3374a58-af0c-44f7-b379-a6a461fe909d",
+              "parentUUID": "bbf71219-2e8b-4cfc-bb7c-71510a7e6574",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0b804aeb-b234-460f-864f-773cb3b4fd15"
+          ],
+          "failures": [
+            "e3374a58-af0c-44f7-b379-a6a461fe909d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 19044,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report",
+        "inlineAssets": true,
+        "video": "false"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

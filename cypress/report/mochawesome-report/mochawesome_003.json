@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-06-01T13:00:55.374Z",
+    "end": "2022-06-01T13:01:45.163Z",
+    "duration": 49789,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4a255871-8658-4ddc-b064-2a33f7f4f2fc",
+      "title": "",
+      "fullFile": "cypress/integration/TC_VerifyCreatedUserData.js",
+      "file": "cypress/integration/TC_VerifyCreatedUserData.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6c1d1507-826a-4ff1-9ed5-fffd52621410",
+          "title": "Cypress POM Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "AM Login",
+              "fullTitle": "Cypress POM Test Suite AM Login",
+              "timedOut": null,
+              "duration": 12358,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.navigate(myGolabalVar);\nloginPage.enterUsername(this.testdata.Username);\nloginPage.enterPassword(this.testdata.Password);\nloginPage.clickOnLogin();",
+              "err": {},
+              "uuid": "ec288124-503f-4251-ac3b-fd2423990013",
+              "parentUUID": "6c1d1507-826a-4ff1-9ed5-fffd52621410",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify individual fields of a Admin User",
+              "fullTitle": "Cypress POM Test Suite Verify individual fields of a Admin User",
+              "timedOut": null,
+              "duration": 35312,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.wait(4000);\nobjVerifyUser.ClickOnUsersTab();\nobjVerifyUser.SearchUser();\ncy.wait(4000);\nobjVerifyUser.VerifyAlltheFields();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<input.trigger>' not to be 'empty'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<input.trigger>' not to be 'empty'\n    at VerifyCreatedData.VerifyAlltheFields (https://qa-gcloud-sso.invue-am.com/__cypress/tests?p=cypress\\integration\\TC_VerifyCreatedUserData.js:217:41)\n    at Context.eval (https://qa-gcloud-sso.invue-am.com/__cypress/tests?p=cypress\\integration\\TC_VerifyCreatedUserData.js:271:19)",
+                "diff": null
+              },
+              "uuid": "3569ddea-09e4-4b33-88d4-993a84a28361",
+              "parentUUID": "6c1d1507-826a-4ff1-9ed5-fffd52621410",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ec288124-503f-4251-ac3b-fd2423990013"
+          ],
+          "failures": [
+            "3569ddea-09e4-4b33-88d4-993a84a28361"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 47670,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report",
+        "inlineAssets": true,
+        "video": "false"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

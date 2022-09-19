@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-06-01T13:00:05.462Z",
+    "end": "2022-06-01T13:00:28.511Z",
+    "duration": 23049,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4f124a28-2a52-488c-bf00-64e1da114f43",
+      "title": "",
+      "fullFile": "cypress/integration/TC_Login.js",
+      "file": "cypress/integration/TC_Login.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7e4a1978-d971-4001-88fe-e2deae8a3b19",
+          "title": "Cypress POM Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "AM Login",
+              "fullTitle": "Cypress POM Test Suite AM Login",
+              "timedOut": null,
+              "duration": 19950,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.navigate(myGlobalVar); // cy.url().should('be.equal', this.testdata.adminUrl)\n//cy.writeFile(\"E:/Cypress/FirstProject/cypress/TestReports/Login.txt\",\"Opened website: \"+myGlobalVar)\n//cy.writeFile(\"E:/Cypress/FirstProject/cypress/TestReports/Login.txt\",\"Opened website: \"+myGolabalVar,{ flag: 'a+' })\nloginPage.enterUsername(this.testdata.Username); //  cy.writeFile(\"E:/Cypress/FirstProject/cypress/TestReports/Login.txt\",\"Logged in with user: \"+this.testdata.Username)\nloginPage.enterPassword(this.testdata.Password); //  cy.writeFile(\"E:/Cypress/FirstProject/cypress/TestReports/Login.txt\",\"Logged in with user: \"+this.testdata.Username)\nloginPage.clickOnLogin(); // cy.writeFile(\"E:/Cypress/FirstProject/cypress/TestReports/Login.txt\",\"Clicked on Login\")\nloginPage.verifyLoggedinUser();\nloginPage.logout();",
+              "err": {},
+              "uuid": "d71fe8a3-5ef6-46f5-9bac-acb9ffe5725e",
+              "parentUUID": "7e4a1978-d971-4001-88fe-e2deae8a3b19",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d71fe8a3-5ef6-46f5-9bac-acb9ffe5725e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 19950,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report",
+        "inlineAssets": true,
+        "video": "false"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
