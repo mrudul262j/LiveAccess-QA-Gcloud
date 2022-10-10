@@ -47,6 +47,7 @@ describe("Cypress POM Test Suite", function ()
     objAddNewuser.EnterEmpIDName().type(faker.random.alphaNumeric())
 
     objAddNewuser.ClickOnSelectLevelOfAccess().click()
+    cy.wait(2000)
     objAddNewuser.SelectRegion().type('Southern{enter}')
 
     objAddNewuser.SelectMarket().type('Cleveland{enter}')

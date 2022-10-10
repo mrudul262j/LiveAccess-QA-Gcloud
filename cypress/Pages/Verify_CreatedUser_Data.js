@@ -30,7 +30,8 @@ export class VerifyCreatedData
 
     UserType()
     {
-        return cy.get('.UserSidebarContents-selectList-admin > div > [type="text"]')
+       // return cy.get('.UserSidebarContents-selectList-admin > div > [type="text"]')
+        return cy.get('#UserTypeId')
 
     }
 

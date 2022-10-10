@@ -20,8 +20,8 @@ describe("Cypress POM Test Suite", function ()
     it('AM Login', function()
     {
         loginPage.navigate(myGlobalVar)
-        loginPage.enterUsername().type(this.testdata.Username)
-        loginPage.enterPassword ().type(this.testdata.Password)
+        loginPage.enterUsername().type(this.testdata.superadminuser)
+        loginPage.enterPassword ().type(this.testdata.SUPassword)
         loginPage.clickOnLogin().click()
              
     })
@@ -46,9 +46,9 @@ it('Verify individual fields of an Admin User', function()
         }
     })
 
-    cy.wait(4000)
+    cy.wait(5000)
 
-    objVerifyUser.UserType().should('have.value', 'Admin') //user type
+    objVerifyUser.UserType().should('have.text', 'AdminUser') //user type
     cy.wait(2000)
 
     objVerifyUser.UserEnabled().should('have.value', 'Yes')
