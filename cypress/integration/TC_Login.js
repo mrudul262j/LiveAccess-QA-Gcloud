@@ -6,7 +6,7 @@ const loginPage = new LoginPage()
 
 let myGlobalVar = Cypress.env("login_url")
 
-describe("Cypress POM Test Suite", function () 
+describe("AM Login", function () 
 {
     before(function () {
         cy.fixture('credentials').then(function (testdata) {

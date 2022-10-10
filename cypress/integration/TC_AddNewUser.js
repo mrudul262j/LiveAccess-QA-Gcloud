@@ -8,7 +8,7 @@ const objAddNewuser = new AddNewAdminUser
 const loginPage = new LoginPage()
 let myGlobalVar = Cypress.env("login_url")
 
-describe("Cypress POM Test Suite", function () 
+describe("Add New Admin User", function () 
 {
     before(function () {
         cy.fixture('credentials').then(function (testdata) {

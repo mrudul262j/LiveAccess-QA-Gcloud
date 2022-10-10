@@ -9,7 +9,7 @@ const objVerifyUser = new VerifyCreatedData()
 const loginPage = new LoginPage()
 let myGlobalVar = Cypress.env("login_url")
 
-describe("Cypress POM Test Suite", function () 
+describe("Verify Created User's data", function () 
 {
     before(function () {
         cy.fixture('credentials').then(function (testdata) {

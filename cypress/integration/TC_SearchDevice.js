@@ -9,7 +9,7 @@ const objSearchDevice = new Search_Device()
 const loginPage = new LoginPage()
 let myGlobalVar = Cypress.env("login_url")
 
-describe("Cypress POM Test Suite", function () 
+describe("Search a Device", function () 
 {
     before(function () {
         cy.fixture('credentials').then(function (testdata) {
