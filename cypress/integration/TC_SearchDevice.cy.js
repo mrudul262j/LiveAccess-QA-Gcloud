@@ -27,22 +27,22 @@ describe("Search a Device", function ()
     })
 
     it('Verify Device details', function()
-{
-    cy.wait(4000)
+    {
+        cy.wait(4000)
 
-    objSearchDevice.ClickOnDeviceTab().click()
-    objSearchDevice.SearchDevice().clear()
-    objSearchDevice.SearchDevice().type('MJ 6ef')
-    cy.wait(2000)
+        objSearchDevice.ClickOnDeviceTab().click()
+        objSearchDevice.SearchDevice().clear()
+        objSearchDevice.SearchDevice().type('MJ 6ef')
+        cy.wait(2000)
 
-    objSearchDevice.SearchList().each(($el) => {
-        if ($el.text() === 'Mj  6ef')
-         {
-          // stop iteration
-          console.log("Device found: " +$el.text())
-          objSearchDevice.SearchedDevice().click()
+        objSearchDevice.SearchList().each(($el) => {
+            if ($el.text() === 'Mj  6ef')
+            {
+            // stop iteration
+            console.log("Device found: " +$el.text())
+            objSearchDevice.SearchedDevice().click()
 
-          return false
+            return false
         }
     })
 
@@ -57,7 +57,8 @@ describe("Search a Device", function ()
 
     objSearchDevice.DeviceSerialNumber().should('have.text', 'LIVE Lock, SN 0006ef, FW 1.0.9') 
    
-    
+    loginPage.logout().click({ multiple: true })
+    loginPage.ClickonLogout().click()
     
    
 
