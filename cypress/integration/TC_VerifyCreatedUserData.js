@@ -88,9 +88,6 @@ it('Verify individual fields of an Admin User', function()
     objVerifyUser.ClickOnButton().click()
     cy.wait(2000)
 
-    loginPage.logout().click({ multiple: true })
-        loginPage.ClickonLogout().click()
-
    
 })
 

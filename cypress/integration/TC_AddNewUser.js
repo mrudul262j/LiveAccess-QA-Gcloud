@@ -1,7 +1,7 @@
 ///  <reference types="cypress" />
 
 import {LoginPage} from "../Pages/Login_page"
-import {AddNewAdminUser} from "../Pages/Add_NewAdminUser"
+import {AddNewAdminUser} from "../Pages/Add_NewUser"
 
 const objAddNewuser = new AddNewAdminUser
 
@@ -82,10 +82,7 @@ describe("Add New Admin User", function ()
           console.log("User created: " +$el.text())
           return false
         }
-
     })
-    loginPage.logout().click({ multiple: true })
-    loginPage.ClickonLogout().click()
 }) 
 
 })

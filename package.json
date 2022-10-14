@@ -1,30 +1,24 @@
 {
   "name": "firstproject",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "cypress open",
-    "merge": "mochawesome-merge cypress/mochawesome-report/*.json > cypress/report/mochawesome-report/output.json",
-    "generate_mochawesome_report": "marge cypress/mochawesome-report/output.json --reportDir ./ --inline"
+    "cypress:open":"cypress open",
+    "merge":"mochawesome-merge cypress/mochawesome-report/*.json > cypress/report/mochawesome-report/output.json",
+    "generate_mochawesome_report":"marge cypress/mochawesome-report/output.json --reportDir ./ --inline"
+   
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^9.7.0",
-    "cypress-xpath": "^1.6.2",
+    "cypress": "^9.5.4",
     "faker": "^5.5.3",
     "mochawesome": "^7.1.3",
+    "cypress-xpath": "^1.6.2",
     "mochawesome-merge": "^4.2.1",
     "mochawesome-report-generator": "^6.2.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mrudul262j/LiveAccess-QA-Gcloud.git"
-  },
-  "bugs": {
-    "url": "https://github.com/mrudul262j/LiveAccess-QA-Gcloud/issues"
-  },
-  "homepage": "https://github.com/mrudul262j/LiveAccess-QA-Gcloud#readme",
-  "description": ""
+  }
+  
 }

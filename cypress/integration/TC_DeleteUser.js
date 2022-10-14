@@ -2,7 +2,7 @@
 
 import {LoginPage} from "../Pages/Login_page"
 
-import {DeleteUser} from "../Pages/Delete_AdminUser"
+import {DeleteUser} from "../Pages/Delete_User"
 
 
 const loginPage = new LoginPage()
@@ -45,8 +45,6 @@ describe("Delete User", function ()
         })
 
         cy.wait(4000)
-        loginPage.logout().click({ multiple: true })
-        loginPage.ClickonLogout().click()
     })
     
 
