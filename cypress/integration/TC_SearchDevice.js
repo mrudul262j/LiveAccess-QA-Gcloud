@@ -56,12 +56,12 @@ describe("Search a Device", function ()
 
 
     objSearchDevice.DeviceSerialNumber().should('have.text', 'LIVE Lock, SN 0006ef, FW 1.0.9') 
-   
-    
-    
-   
 
+    cy.wait(2000)
+    loginPage.logout().click({ multiple: true })
+    loginPage.ClickonLogout().click()
    
+  
 })
 
 })

@@ -44,7 +44,11 @@ describe("Delete User", function ()
             }
         })
 
-        cy.wait(4000)
+       
+    cy.wait(2000)
+    loginPage.logout().click({ multiple: true })
+    loginPage.ClickonLogout().click()
+   
     })
     
 
